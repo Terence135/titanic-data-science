@@ -35,3 +35,9 @@ Next: add `familySize` to the feature table, then set up validation and compare 
 Set up a validation split from the training data and compared logistic-regression variants using the original features, `IsAlone`, `familySize`, and both engineered features. Learned that adding `IsAlone` alone left the metrics unchanged on this validation split, while adding both features increased precision from 0.69 to 0.72 but reduced recall from 0.67 to 0.65. Created grouped bar charts for recall and for precision/recall together, then recorded the interpretation in the notebook.
 
 The current next experiment is to compare a decision tree with the original logistic-regression model using the same validation split.
+
+## Pandas practice — 24 September 2026
+
+Added [today's practice notebook](Pandas_Practice_2026-09-24.ipynb), preserving the saved exercise attempts and outputs. Practised filtering, grouped summaries, passenger selection with `idxmin`/`idxmax`, row-aligned statistics with `transform`, family-size categories, age bands, and title extraction.
+
+This is work in progress, not a completed or fully reviewed solution set. Some calculations still need correction, and the rare-title exercise remains unfinished with a recorded error.
