@@ -29,3 +29,9 @@ These are exploratory comparisons on the existing test split, not a final thresh
 Inspected the 712 training passengers and four original features. Explored survival by family size using training rows only, created an `IsAlone` indicator, and added it to a copied training feature table (712 rows, five features). Practised selecting passengers with `df.loc[X_train.index]` and aligning a new column by passenger index.
 
 Next: add `familySize` to the feature table, then set up validation and compare feature variants. No improved model has been trained yet.
+
+## Validation and feature comparison — 24 September 2026
+
+Set up a validation split from the training data and compared logistic-regression variants using the original features, `IsAlone`, `familySize`, and both engineered features. Learned that adding `IsAlone` alone left the metrics unchanged on this validation split, while adding both features increased precision from 0.69 to 0.72 but reduced recall from 0.67 to 0.65. Created grouped bar charts for recall and for precision/recall together, then recorded the interpretation in the notebook.
+
+The current next experiment is to compare a decision tree with the original logistic-regression model using the same validation split.
