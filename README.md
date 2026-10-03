@@ -41,3 +41,15 @@ The current next experiment is to compare a decision tree with the original logi
 Added [today's practice notebook](Pandas_Practice_2026-09-24.ipynb), preserving the saved exercise attempts and outputs. Practised filtering, grouped summaries, passenger selection with `idxmin`/`idxmax`, row-aligned statistics with `transform`, family-size categories, age bands, and title extraction.
 
 This is work in progress, not a completed or fully reviewed solution set. Some calculations still need correction, and the rare-title exercise remains unfinished with a recorded error.
+
+## Pandas practice — 3 October 2026
+
+Attempted five exercises covering missing values, filtering and sorting, surname extraction, duplicate tickets, and reshaping passenger counts by class and sex.
+
+- Verified the age 18–40 and Southampton filter, selected the requested columns, and displayed the ten highest fares.
+- Correctly extracted surnames with string operations and displayed the five most common surnames. Reviewed using a copy to preserve the original DataFrame.
+- Reviewed why `info()` cannot be sorted: it prints a summary and returns `None`. The missing-value count exercise still needs correction.
+- Learned that `duplicated(keep=False)` includes every passenger sharing a ticket; the corrected execution has not yet been verified.
+- Calculated the correct passenger counts by class and sex. Reviewed using `unstack('Sex')` for a table with classes as rows and sex as columns; the final wide table and three-column reshaping remain unverified.
+
+Next: finish and review the missing-value and reshaping exercises, and verify the duplicate-ticket correction.
